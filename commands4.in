@@ -1,0 +1,45 @@
+# Add review normal cases
+
+LOGIN adal
+
+OR r hidden data
+
+# Invalid commands
+
+VIEWREV 0
+VIEWREV 3
+VIEWREV hidden
+
+# Normal Commands
+
+ADD 1 
+
+ADDREV 1 1 2010-01-06 should be last
+ADDREV 1 1 2020-01-01 should be first
+
+LOGIN aturing
+
+ADDREV 1 1 2019-01-05 same date as other one
+
+LOGIN johnvn
+
+ADDREV 2 5 1111-11-11
+ADDREV 2 5 1111-11-12			           	            LOTS of WHITESPACE         		  
+
+# Make sure to check the dates are ordered correctly here
+VIEWREV 1
+VIEWREV 2
+
+LOGOUT
+
+# The new reviews should change the order of search output
+
+LOGIN adal
+
+OR r hidden data
+
+ADD 1
+
+BUYCART
+
+QUIT out4.out

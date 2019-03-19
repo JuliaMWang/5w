@@ -1,0 +1,48 @@
+# Login/Logout Tests
+
+# Invalid Commands
+
+OR n hidden data
+
+ADD johnvn 1
+VIEWCART johnvn
+BUYCART johvn
+
+LOGIN jason
+
+LOGOUT
+
+# Normal cases
+
+LOGIN adal
+
+ADD 1
+VIEWCART
+BUYCART
+
+LOGOUT
+
+ADD 2
+VIEWCART
+BUYCART
+
+LOGIN aturing
+
+ADD 2
+VIEWCART
+
+LOGIN adal
+
+ADD 2
+VIEWCART
+BUYCART
+
+LOGOUT
+
+LOGIN aturing
+
+ADD 1
+VIEWCART
+BUYCART
+
+QUIT out1.out

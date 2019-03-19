@@ -1,0 +1,51 @@
+./amazon database.txt
+OR n hidden data men
+
+LOGIN / LOGOUT
+ADD stuff
+
+OR r hidden data men
+
+LOGIN / LOGOUT
+ADD stuff
+
+
+search sort tests
+- search yields zero results for r and n
+- search yields one result for r and n
+- search yields all results for r and n
+- make sure that add command adds the correct item
+
+login/logout tests
+- add, viewcart, buycart when no login
+- login invalid user
+- login first user
+- add, viewcart, buycart when login
+- logout
+- add, viewcart, buycart after logout
+- login second user
+- add, viewcart
+- login to first user
+- add, viewcart, buycart first user
+- login to second user
+- add, viewcart, buycart second user
+
+date tests
+- no dashes in the date
+- wrong number of digits for year, month, day
+- has letters/spaces/non-digits in any of the spots
+- has extra stuff at the end
+- day is outside range of the month
+
+addreview tests
+- search hit number out of bounds
+- rating out of bounds
+- date wrong ^^^
+- any of these three don't exist
+- reivew text doesn't exist
+- make sure review text is getting trimmed
+
+viewreview tests
+- reviews are getting stored by date
+- new reviews affect ordering of future searches
+- formatting in the output database is correct

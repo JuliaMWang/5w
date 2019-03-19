@@ -1,0 +1,45 @@
+# Searches Normal Tests
+
+# Incorrect search formatting
+
+LOGIN adal
+OR hidden data
+ADD 1
+OR z hidden data
+ADD 1
+OR R hidden data
+ADD 1
+OR N hidden data
+ADD 1
+
+# Test from HW4
+
+OR n hidden data
+ADD 2
+BUYCART
+
+# Searches yield different number of results
+
+OR n jason
+ADD 1
+OR r jason
+ADD 1
+AND n jason
+ADD 1
+AND r jason
+ADD 1
+OR n great
+ADD 1
+OR r great
+ADD 1
+AND n great
+ADD 1
+AND r great
+ADD 1
+OR n data men hidden
+ADD 3
+OR r data men hidden
+ADD 3
+BUYCART
+
+QUIT out1.out
